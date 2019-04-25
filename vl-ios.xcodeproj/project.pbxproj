@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A403474F227246230088F810 /* VLClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A403474E227246230088F810 /* VLClient.swift */; };
+		A4034751227246CA0088F810 /* VLConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4034750227246CA0088F810 /* VLConstants.swift */; };
 		A49E000A225A556C0039D3F9 /* vl_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A49E0000225A556C0039D3F9 /* vl_ios.framework */; };
 		A49E000F225A556C0039D3F9 /* vl_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49E000E225A556C0039D3F9 /* vl_iosTests.swift */; };
 		A49E0011225A556C0039D3F9 /* vl_ios.h in Headers */ = {isa = PBXBuildFile; fileRef = A49E0003225A556C0039D3F9 /* vl_ios.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -23,6 +25,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A403474E227246230088F810 /* VLClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VLClient.swift; sourceTree = "<group>"; };
+		A4034750227246CA0088F810 /* VLConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VLConstants.swift; sourceTree = "<group>"; };
 		A49E0000225A556C0039D3F9 /* vl_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = vl_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A49E0003225A556C0039D3F9 /* vl_ios.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vl_ios.h; sourceTree = "<group>"; };
 		A49E0004225A556C0039D3F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -64,6 +68,8 @@
 			children = (
 				A49E0003225A556C0039D3F9 /* vl_ios.h */,
 				A49E0004225A556C0039D3F9 /* Info.plist */,
+				A403474E227246230088F810 /* VLClient.swift */,
+				A4034750227246CA0088F810 /* VLConstants.swift */,
 			);
 			path = "vl-ios";
 			sourceTree = "<group>";
@@ -144,13 +150,14 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1020;
 				LastUpgradeCheck = 1020;
-				ORGANIZATIONNAME = "Abdullah Selek";
+				ORGANIZATIONNAME = VerifID;
 				TargetAttributes = {
 					A49E0008225A556C0039D3F9 = {
 						CreatedOnToolsVersion = 10.2;
 					};
 					A49EFFFF225A556C0039D3F9 = {
 						CreatedOnToolsVersion = 10.2;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -202,6 +209,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A403474F227246230088F810 /* VLClient.swift in Sources */,
+				A4034751227246CA0088F810 /* VLConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +350,7 @@
 		A49E0015225A556C0039D3F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -358,6 +368,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.abdullahselek.vl-ios";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -366,6 +377,7 @@
 		A49E0016225A556C0039D3F9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -391,6 +403,7 @@
 		A49E0018225A556C0039D3F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "vl-iosTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -408,6 +421,7 @@
 		A49E0019225A556C0039D3F9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "vl-iosTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
