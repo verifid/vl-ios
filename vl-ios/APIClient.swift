@@ -8,7 +8,7 @@
 
 import Foundation
 
-open class VLClient {
+open class APIClient {
 
     fileprivate let jsonSerialization = JSONSerialization()
     fileprivate let defaultSession: URLSession = {
