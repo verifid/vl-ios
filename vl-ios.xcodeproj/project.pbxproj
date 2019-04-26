@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A403474F227246230088F810 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A403474E227246230088F810 /* APIClient.swift */; };
 		A4034751227246CA0088F810 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4034750227246CA0088F810 /* Constants.swift */; };
+		A447DD0E2273A7B90042097E /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A447DD0D2273A7B90042097E /* Model.swift */; };
 		A49E000A225A556C0039D3F9 /* vl_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A49E0000225A556C0039D3F9 /* vl_ios.framework */; };
 		A49E000F225A556C0039D3F9 /* vl_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49E000E225A556C0039D3F9 /* vl_iosTests.swift */; };
 		A49E0011225A556C0039D3F9 /* vl_ios.h in Headers */ = {isa = PBXBuildFile; fileRef = A49E0003225A556C0039D3F9 /* vl_ios.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -27,6 +28,7 @@
 /* Begin PBXFileReference section */
 		A403474E227246230088F810 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		A4034750227246CA0088F810 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A447DD0D2273A7B90042097E /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		A49E0000225A556C0039D3F9 /* vl_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = vl_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A49E0003225A556C0039D3F9 /* vl_ios.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vl_ios.h; sourceTree = "<group>"; };
 		A49E0004225A556C0039D3F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 				A49E0004225A556C0039D3F9 /* Info.plist */,
 				A403474E227246230088F810 /* APIClient.swift */,
 				A4034750227246CA0088F810 /* Constants.swift */,
+				A447DD0D2273A7B90042097E /* Model.swift */,
 			);
 			path = "vl-ios";
 			sourceTree = "<group>";
@@ -209,6 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A447DD0E2273A7B90042097E /* Model.swift in Sources */,
 				A403474F227246230088F810 /* APIClient.swift in Sources */,
 				A4034751227246CA0088F810 /* Constants.swift in Sources */,
 			);
