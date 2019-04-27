@@ -16,3 +16,14 @@ public struct User: Codable {
     let placeOfBirth: String
     let surname: String
 }
+
+public struct UserResponse: Decodable {
+    let code: Int
+    let message: String
+    let type: String
+    let userId: String?
+
+    enum CodingKeys: String, CodingKey {
+        case code, message, type, userId = "user_id"
+    }
+}
