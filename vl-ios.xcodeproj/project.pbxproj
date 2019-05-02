@@ -9,9 +9,9 @@
 /* Begin PBXBuildFile section */
 		A403474F227246230088F810 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A403474E227246230088F810 /* APIClient.swift */; };
 		A4034751227246CA0088F810 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4034750227246CA0088F810 /* Constants.swift */; };
+		A43D0969227BA19E00854FFD /* EndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43D0968227BA19E00854FFD /* EndpointTests.swift */; };
 		A447DD0E2273A7B90042097E /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A447DD0D2273A7B90042097E /* Model.swift */; };
 		A49E000A225A556C0039D3F9 /* vl_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A49E0000225A556C0039D3F9 /* vl_ios.framework */; };
-		A49E000F225A556C0039D3F9 /* vl_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49E000E225A556C0039D3F9 /* vl_iosTests.swift */; };
 		A49E0011225A556C0039D3F9 /* vl_ios.h in Headers */ = {isa = PBXBuildFile; fileRef = A49E0003225A556C0039D3F9 /* vl_ios.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -28,12 +28,12 @@
 /* Begin PBXFileReference section */
 		A403474E227246230088F810 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		A4034750227246CA0088F810 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A43D0968227BA19E00854FFD /* EndpointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointTests.swift; sourceTree = "<group>"; };
 		A447DD0D2273A7B90042097E /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		A49E0000225A556C0039D3F9 /* vl_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = vl_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A49E0003225A556C0039D3F9 /* vl_ios.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vl_ios.h; sourceTree = "<group>"; };
 		A49E0004225A556C0039D3F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A49E0009225A556C0039D3F9 /* vl-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "vl-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A49E000E225A556C0039D3F9 /* vl_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vl_iosTests.swift; sourceTree = "<group>"; };
 		A49E0010225A556C0039D3F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,8 +80,8 @@
 		A49E000D225A556C0039D3F9 /* vl-iosTests */ = {
 			isa = PBXGroup;
 			children = (
-				A49E000E225A556C0039D3F9 /* vl_iosTests.swift */,
 				A49E0010225A556C0039D3F9 /* Info.plist */,
+				A43D0968227BA19E00854FFD /* EndpointTests.swift */,
 			);
 			path = "vl-iosTests";
 			sourceTree = "<group>";
@@ -157,6 +157,7 @@
 				TargetAttributes = {
 					A49E0008225A556C0039D3F9 = {
 						CreatedOnToolsVersion = 10.2;
+						LastSwiftMigration = 1020;
 					};
 					A49EFFFF225A556C0039D3F9 = {
 						CreatedOnToolsVersion = 10.2;
@@ -204,7 +205,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A49E000F225A556C0039D3F9 /* vl_iosTests.swift in Sources */,
+				A43D0969227BA19E00854FFD /* EndpointTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,6 +409,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "vl-iosTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -417,6 +419,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.verifid.vl-iosTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -426,6 +429,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "vl-iosTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
