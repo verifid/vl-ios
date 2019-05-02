@@ -27,3 +27,13 @@ public struct UserResponse: Decodable {
         case code, message, type, userId = "user_id"
     }
 }
+
+public struct ImageUploadResponse: Decodable {
+    let code: Int
+    let message: String
+    let type: String
+
+    enum CodingKeys: String, CodingKey {
+        case code, message, type
+    }
+}
