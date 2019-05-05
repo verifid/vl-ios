@@ -22,4 +22,7 @@
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:vl-ios.xcodeproj">
+   </FileRef>
 </Workspace>

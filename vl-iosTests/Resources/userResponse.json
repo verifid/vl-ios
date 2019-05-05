@@ -1,0 +1,6 @@
+{
+    "code": 200,
+    "message": "User created with received values.",
+    "type": "success",
+    "userId": "2e3face9-ea94-45f5-9c95-88c016efce79"
+}
