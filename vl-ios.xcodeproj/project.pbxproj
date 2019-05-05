@@ -13,6 +13,8 @@
 		A447DD0E2273A7B90042097E /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A447DD0D2273A7B90042097E /* Model.swift */; };
 		A49E000A225A556C0039D3F9 /* vl_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A49E0000225A556C0039D3F9 /* vl_ios.framework */; };
 		A49E0011225A556C0039D3F9 /* vl_ios.h in Headers */ = {isa = PBXBuildFile; fileRef = A49E0003225A556C0039D3F9 /* vl_ios.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A4BC88D0227EF3DD009D96C8 /* APIClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BC88CF227EF3DD009D96C8 /* APIClientTests.swift */; };
+		A4BC88D2227EF87D009D96C8 /* VLiOS.podspec in Resources */ = {isa = PBXBuildFile; fileRef = A4BC88D1227EF87D009D96C8 /* VLiOS.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,8 @@
 		A49E0004225A556C0039D3F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A49E0009225A556C0039D3F9 /* vl-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "vl-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A49E0010225A556C0039D3F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4BC88CF227EF3DD009D96C8 /* APIClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientTests.swift; sourceTree = "<group>"; };
+		A4BC88D1227EF87D009D96C8 /* VLiOS.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = VLiOS.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +86,7 @@
 			children = (
 				A49E0010225A556C0039D3F9 /* Info.plist */,
 				A43D0968227BA19E00854FFD /* EndpointTests.swift */,
+				A4BC88CF227EF3DD009D96C8 /* APIClientTests.swift */,
 			);
 			path = "vl-iosTests";
 			sourceTree = "<group>";
@@ -89,6 +94,7 @@
 		A49EFFF6225A556C0039D3F9 = {
 			isa = PBXGroup;
 			children = (
+				A4BC88D1227EF87D009D96C8 /* VLiOS.podspec */,
 				A49E0002225A556C0039D3F9 /* vl-ios */,
 				A49E000D225A556C0039D3F9 /* vl-iosTests */,
 				A49E0001225A556C0039D3F9 /* Products */,
@@ -195,6 +201,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4BC88D2227EF87D009D96C8 /* VLiOS.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,6 +213,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A43D0969227BA19E00854FFD /* EndpointTests.swift in Sources */,
+				A4BC88D0227EF3DD009D96C8 /* APIClientTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

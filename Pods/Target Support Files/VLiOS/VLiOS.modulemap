@@ -1,0 +1,6 @@
+framework module VLiOS {
+  umbrella header "VLiOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

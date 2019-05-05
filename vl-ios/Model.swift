@@ -8,13 +8,31 @@
 
 import Foundation
 
-public struct User: Codable {
+public struct User: Encodable {
     let country: String
     let dateOfBirth: String
     let gender: String
     let name: String
     let placeOfBirth: String
     let surname: String
+
+    public init(country: String,
+                dateOfBirth: String,
+                gender: String,
+                name: String,
+                placeOfBirth: String,
+                surname: String) {
+        self.country = country
+        self.dateOfBirth = dateOfBirth
+        self.gender = gender
+        self.name = name
+        self.placeOfBirth = placeOfBirth
+        self.surname = surname
+    }
+
+    enum CodingKeys: String, CodingKey {
+        case country, dateOfBirth, gender, name, placeOfBirth, surname
+    }
 }
 
 public struct UserResponse: Decodable {
@@ -24,7 +42,7 @@ public struct UserResponse: Decodable {
     let userId: String?
 
     enum CodingKeys: String, CodingKey {
-        case code, message, type, userId = "user_id"
+        case code, message, type, userId
     }
 }
 

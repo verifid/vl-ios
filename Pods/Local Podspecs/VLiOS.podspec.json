@@ -1,0 +1,23 @@
+{
+  "name": "VLiOS",
+  "version": "0.1",
+  "summary": "iOS client for identity verification layer.",
+  "homepage": "https://github.com/verifid/vl-ios",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Abdullah Selek": "abdullahselek@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/verifid/vl-ios.git",
+    "tag": "0.1"
+  },
+  "platforms": {
+    "ios": "11.0"
+  },
+  "source_files": "vl-ios/*.swift",
+  "requires_arc": true,
+  "swift_version": "5.0"
+}
